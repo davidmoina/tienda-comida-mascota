@@ -89,38 +89,93 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3%;
-  width: 100%;
-  text-align: center;
+  gap: 30px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
 
-.section2__laterales img {
+.section2__laterales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section2__laterales figure {
   width: 350px;
   height: 350px;
-  object-fit: cover;
   border-radius: 50%;
+  overflow: hidden;
+}
+
+.section2__laterales figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.section2__laterales figure img:hover {
+  transform: scale(1.3);
 }
 
 .section2__laterales h2 {
   margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 10px;
   background: rgb(238,174,202);
   background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);;
 }
 
 .section2__centro img {
   width: 30px;
-  height: 30px;  
+  /* height: 30px; */
+}
+
+.section2__centro .flecha__de {
+  animation-name: efecto;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.section2__centro .flecha__izq {
+  animation-name: efecto2;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes efecto2 {
+  0% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes efecto {
+  0% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(10px);
+  }
 }
 
 .section2__centro {
   display: flex;
+  justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 .section2__centro p {
-  margin: 10px;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -230,19 +285,8 @@ body {
 .seleccion__tipo {
   display: flex;
   justify-content: center;
-  gap: 20%;
-  padding: 20px;
-}
-
-.seleccion__imagen {
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.seleccion__tipo figure {
-  text-align: center;
+  gap: 300px;
+  padding-bottom: 20px;
 }
 
 .main__mascotas {
@@ -272,6 +316,12 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.mascotas__productos:hover {
+  transform: scale(1.1);
 }
 
 .productos__imagen {
@@ -294,6 +344,11 @@ body {
 
 /*pagina empresa*/
 
+.main--posicionado {
+  width: 80%;
+  margin: 10px auto;
+}
+
 .main__articulo {
   width: 80%;
   margin: 0 auto;
@@ -303,9 +358,8 @@ body {
   align-items: center;
 }
 
-.main__articulo h1 {
+.main--poisicionado h1 {
   font-size: 30px;
-  align-self: flex-start;
 }
 
 .main__articulo figure {
@@ -315,7 +369,7 @@ body {
 .articulo__imagen {
   width: 350px;
   height: 350px;
-  object-fit: none;
+  border-radius: 50%;
 }
 
 .articulo__parrafo {
@@ -370,11 +424,28 @@ body {
 }
 
 .contenedor__formulario form button {
-  background-color: #FBAB7E;
-  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-  border: 0;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-family: inherit;
+  font-weight: bold;
   text-transform: uppercase;
-  padding: 0.7em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background-size: 120% auto;
+  background-image: linear-gradient(315deg, #c02425 0%, #f0cb35 75%);
+}
+.contenedor__formulario form button:hover {
+  background-position: right center;
+}
+.contenedor__formulario form button:active {
+  top: 2px;
 }
 
 
@@ -502,13 +573,29 @@ body {
 }
 
 .cesta__total button {
-  width: 90%;
-  background-color: #FBAB7E;
-  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-  border: 1px solid orange;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-family: inherit;
+  font-weight: bold;
   text-transform: uppercase;
-  padding: 0.7em;
-  margin: 10px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+  background-size: 120% auto;
+  background-image: linear-gradient(315deg, #c02425 0%, #f0cb35 75%);
+}
+.cesta__total button:hover {
+  background-position: right center;
+}
+.cesta__total button:active {
+  top: 2px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -529,10 +616,12 @@ body {
   }
 
   .section2__laterales--reves {
-    display: flex;
     flex-direction: column-reverse;
-    align-items: center;
-    gap: 10px;
+  }
+
+  .section2__laterales--reves h2 {
+    margin-top: 10px;
+    margin-bottom: 0;
   }
 
   .section2__centro {
@@ -564,17 +653,13 @@ body {
   }
 
   .main__section4 h2 {
-    padding: 16px;
+    width: 80%;
   }
 
   /*pagina productos tablet*/
   .seleccion__tipo {
     flex-direction: column;
     gap: 20px;
-  }
-
-  .seleccion__tipo figcaption {
-    color: #fff;
   }
 
   .main__mascotas {
@@ -659,17 +744,9 @@ body {
     width: 100%;
   }
 
-  .section2__laterales img{
+  .section2__laterales figure {
     width: 250px;
     height: 250px;
-  }
-
-  .section2__centro {
-    flex-direction: column;
-  }
-
-  .section2__centro img{
-    transform: rotate(90deg);
   }
 
   .main__section3 {
