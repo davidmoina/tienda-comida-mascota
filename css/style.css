@@ -129,7 +129,6 @@ body {
 
 .section2__centro img {
   width: 30px;
-  /* height: 30px; */
 }
 
 .section2__centro .flecha__de {
@@ -178,6 +177,11 @@ body {
 .section2__centro p {
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.section2__centro .flecha__arriba,
+.section2__centro .flecha__abajo {
+  display: none;
 }
 
 .main__section3 {
@@ -285,7 +289,7 @@ body {
 .seleccion__tipo {
   display: flex;
   justify-content: center;
-  gap: 300px;
+  gap: 80px;
   padding-bottom: 20px;
 }
 
@@ -628,8 +632,50 @@ body {
     flex-direction: column;
   }
 
-  .section2__centro img{
-    transform: rotate(90deg);
+  .section2__centro .flecha__izq,
+  .section2__centro .flecha__de {
+    display: none;
+  }
+
+  .section2__centro .flecha__arriba,
+  .section2__centro .flecha__abajo {
+    display: block;
+  }
+  
+  .section2__centro .flecha__abajo {
+    animation-name: efecto;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  
+  .section2__centro .flecha__arriba {
+    animation-name: efecto2;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  
+  @keyframes efecto2 {
+    0% {
+      transform: translateY(0px);
+    }
+  
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes efecto {
+    0% {
+      transform: translateY(0px);
+    }
+  
+    100% {
+      transform: translateY(10px);
+    }
   }
 
   .main__section3 {
