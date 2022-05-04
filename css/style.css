@@ -20,6 +20,10 @@ body {
   width: 60px;
 }
 
+.barra__navegacion .barra__navegacion__derecha .navegacion-link {
+  color: blue;
+}
+
 /*pagina inicio*/
 
 .main__section1 {
