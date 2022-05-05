@@ -20,8 +20,8 @@ body {
   width: 60px;
 }
 
-.barra__navegacion .barra__navegacion__derecha .navegacion-link {
-  color: blue;
+.barra__navegacion .navegacion__de .navegacion-link:hover {
+  color: blueviolet;
 }
 
 /*pagina inicio*/
@@ -566,11 +566,16 @@ body {
 @media screen and (max-width: 1023px) {
 
   /*header tablet*/
-  .header {
-    flex-direction: column;
+
+  .header__logo {
+    margin-right: 0;
   }
 
   /*pagina inicio tablet*/
+  .main__section1 {
+    height: 30vh;
+  }
+
   .section1__titulo {
     font-size: 26px;
   }
@@ -698,50 +703,12 @@ body {
 @media screen and (max-width: 560px) {
 
   /*header mobile*/
-  .header__izq {
-    display: grid;
-    grid-template-columns: 1fr 50px 50px;
-    grid-template-rows: 1fr 30px;
-   }
-
-  .header__logo {
-    grid-column: 1 / 4;
-    justify-self: center;
-  }
-
-  .header__nombre {
-    margin-left: 0;
-    margin-right: 10px;
-  }
-
-  .header__navegacion {
-    display: none;
-  }
-
-  .header__izq .header__menu {
-    color: black;
-    display: block;
-    font-size: 25px;
-    justify-self: center;
-  }
-
-  .header__izq .header__menu:hover {
-    color: blueviolet;
-  }
-
-  .header__nombre {
-    font-size: 30px;
-  }
-
-  .header__izq {
-    flex-direction: column;
-  }
 
   /*pagina inicio mobile*/
   .main__section1 {
     flex-direction: column;
     overflow: hidden;
-    min-height: 60vh;
+    height: 40vh;
   }
 
   .section1__titulo {
