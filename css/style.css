@@ -313,15 +313,12 @@ body {
 }
 /*pagina empresa*/
 
-.main--posicionado {
-  width: 80%;
-  margin: 10px auto;
+ .main--posicionado {
+  margin-top: 10px;
 }
 
 .main__articulo {
-  width: 80%;
-  margin: 0 auto;
-  padding: 10px 15px;
+  margin: 10px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -343,7 +340,7 @@ body {
 
 .articulo__parrafo {
   font-size: 20px;
-  margin: 10px;
+  margin-bottom: 10px;
   text-align: justify;
 }
 
