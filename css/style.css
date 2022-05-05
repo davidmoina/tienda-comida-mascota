@@ -24,6 +24,10 @@ body {
   color: blueviolet;
 }
 
+.barra__navegacion .navegacion__de .navegacion-link:active {
+  transform: scale(1.1);
+}
+
 /*pagina inicio*/
 
 .main__section1 {
