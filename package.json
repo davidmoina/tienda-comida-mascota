@@ -1,0 +1,20 @@
+{
+  "name": "proyecto1",
+  "version": "1.0.0",
+  "description": "Esta es una pagina web creada desde 0 para el proyecto del curso de desarrollo web en **CODERHOUSE**. Es una pagina de comida para mascotas, en concreto para perros y gatos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass style.scss ./css/estilos.min.css -w --no-source-map -s compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidmoina/tienda-comida-mascota.git"
+  },
+  "author": "david moina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidmoina/tienda-comida-mascota/issues"
+  },
+  "homepage": "https://github.com/davidmoina/tienda-comida-mascota#readme"
+}

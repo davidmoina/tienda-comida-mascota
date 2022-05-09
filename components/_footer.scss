@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px 0 30px;
+  background: rgb(238,174,202);
+  background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);;
+  min-height: 150px;
+
+  &__izq {
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  &__derecha img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .secciones--color:hover {
+    color: blueviolet;
+  }
+}

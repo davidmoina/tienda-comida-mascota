@@ -1,0 +1,19 @@
+.header {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+
+  &__logo img{
+    border-radius: 50%;
+    width: 60px;
+  }
+}
+
+.barra__navegacion .navegacion__de .navegacion-link:hover {
+
+  &:hover {
+    color: blueviolet;
+  }
+
+  &:active {
+    transform: scale(1.1);
+  }
+}
