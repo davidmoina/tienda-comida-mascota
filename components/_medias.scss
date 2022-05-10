@@ -1,0 +1,156 @@
+@media screen and (max-width: 1023px) {
+
+  /*header tablet*/
+
+  .header__logo {
+    margin-right: 0;
+  }
+
+  /*pagina inicio tablet*/
+  .section1 {
+
+    &__titulo {
+      font-size: 26px;
+    }
+  }
+
+  .section2 {
+    flex-direction: column;
+    gap: 20px;
+
+    &__laterales--reves {
+      flex-direction: column-reverse;
+
+      h2 {
+        margin-top: 10px;
+        margin-bottom: 0;
+      }
+    }
+
+    &__centro {
+      flex-direction: column;
+
+      .flecha__izq,
+      .flecha__de {
+        display: none;
+      }
+
+      .flecha__arriba,
+      .flecha__abajo {
+        display: block;
+      }
+
+      .flecha__abajo {
+        animation-name: efecto;
+        animation-duration: 0.8s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+
+      .flecha__arriba {
+        animation-name: efecto2;
+        animation-duration: 0.8s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+
+      @keyframes efecto2 {
+        0% {
+          transform: translateY(0px);
+        }
+      
+        100% {
+          transform: translateY(-10px);
+        }
+      }
+      
+      @keyframes efecto {
+        0% {
+          transform: translateY(0px);
+        }
+      
+        100% {
+          transform: translateY(10px);
+        }
+      }
+    }
+  }
+
+  .section3 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    p {
+      width: 100%;
+    }
+
+    iframe {
+      width: 100%;
+    }
+  }
+
+  .section4 {
+    margin-bottom: 20px;
+
+    h2 {
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+
+  /*pagina inicio mobile*/
+  .section1 {
+    grid-template-columns: 1fr;
+
+    &__titulo {
+      width: 100%;
+    }
+
+    &__imagen {
+      width: 100%;
+    }
+  }
+
+  .section2 {
+    &__laterales {
+      figure {
+        width: 250px;
+        height: 250px;
+      }
+    }
+  }
+
+  .section3 {
+    p {
+      font-size: 25px;
+    }
+
+    iframe {
+      width: 100%;
+    }
+  }
+
+  .section4 {
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr .8fr .8fr;
+    height: 100%;
+
+    h2 {
+      font-size: 20px;
+      padding: 15px;
+      grid-column: 1;
+      justify-self: center;
+    }
+  }
+
+  /*footer mobile*/
+  .footer {
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
