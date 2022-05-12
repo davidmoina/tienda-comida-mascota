@@ -81,11 +81,8 @@
     }
 
     .flecha__izq {
+      @extend .flecha__de;
       animation-name: efecto2;
-      animation-duration: 0.8s;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-      animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 
     @keyframes efecto2 {
