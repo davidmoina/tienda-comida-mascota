@@ -3,9 +3,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 30px 0 30px;
-  background: rgb(238,174,202);
-  background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);;
   min-height: 150px;
+  @include fondo-degradado;
 
   &__izq {
     ul {
@@ -20,9 +19,31 @@
     }
   }
 
-  &__derecha img {
-    width: 30px;
-    height: 30px;
+  &__derecha {
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      padding: 5px;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .facebook{
+      background-color: map-get($iconos ,facebook);
+    }
+
+    .instagram {
+      background-color: map-get($iconos, instagram);
+    }
+
+    .youtube {
+      background-color: map-get($iconos, youtube);
+    }
   }
 
   .secciones--color:hover {
