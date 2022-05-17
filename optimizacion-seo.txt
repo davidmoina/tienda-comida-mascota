@@ -1,0 +1,9 @@
+- He comprimido todas las imagenes con la pagina tinypng para reducir su tamaño.
+
+- He añadido una meta descripcion en el head de todas las paginas.
+
+- He añadido la etiqueta Keywords en todas las paginas.
+
+- He modificado los titulos del documento de cada pagina.
+
+- Los encabezados no los he modificado porque creo que ya estan mas o menos bien a mi parecer.
