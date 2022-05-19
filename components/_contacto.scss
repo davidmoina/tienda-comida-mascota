@@ -1,0 +1,77 @@
+/*pagina contacto*/
+
+.contenedor {
+  width: 80%;
+  min-height: 65vh;
+  margin: 20px auto;
+
+  &__formulario {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffead3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+
+    p {
+      text-align: center;
+    }
+    
+    form  {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      div {
+        padding: 2em;
+      }
+
+      .formulario--area {
+        grid-column: 1 / 3;
+      }
+
+      button {
+        width: 100%;
+        padding: 5px;
+        border: none;
+        background: none;
+        outline: none;
+        border-bottom: 1px solid orange;
+        min-width: 130px;
+        height: 40px;
+        color: #fff;
+        padding: 5px 10px;
+        font-family: inherit;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        border-radius: 5px;
+        border: none;
+        background-size: 120% auto;
+        background-image: linear-gradient(315deg, #c02425 0%, #f0cb35 75%);
+
+        &:hover {
+          background-position: right center;
+        }
+        &:active {
+          top: 2px;
+        }
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 5px;
+        border: none;
+        background: none;
+        outline: none;
+        border-bottom: 1px solid orange;
+      }
+    }    
+  }
+}
+
+

@@ -98,6 +98,21 @@
       width: 80%;
     }
   }
+
+  /*pagina productos tablet*/
+  .seleccion__tipo {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mascotas {
+    grid-template-columns: repeat(2, 1fr);
+
+    &__titulo {
+      grid-column: 1 / 3;
+    }
+  }
+
 }
 
 @media screen and (max-width: 560px) {
@@ -153,4 +168,33 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
+  /*pagina productos mobile*/
+  .seleccion__imagen {
+    width: 250px;
+    height: 250px;
+  }
+
+  .mascotas {
+    grid-template-columns: 1fr;
+
+    &__titulo {
+      grid-column: 1 / 2;
+    }
+  }
+
+  /*pagina empresa mobile*/
+  .empresa__articulo {
+    width: 100%;
+
+    figure {
+      
+      .articulo--imagen {
+        width: 250px;
+        height: 250px;
+        object-fit: contain;
+      }
+    }
+  }
+
 }

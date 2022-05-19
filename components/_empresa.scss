@@ -1,0 +1,36 @@
+/*pagina empresa*/
+
+.empresa {
+  margin-top: 10px;
+
+  &__articulo {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    figure {
+      margin: 20px 20px;
+
+      .articulo--imagen {
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+      }
+    }
+
+    .articulo--parrafo {
+      font-size: 20px;
+      margin-bottom: 10px;
+      text-align: justify;
+    }
+  }
+}
+
+
+
+
+
+
+
+
