@@ -1,0 +1,37 @@
+.faqs {
+  width: 80%;
+  margin: 0 auto;
+
+  &__titulo {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  &__lista {
+    width: 80%;
+    margin: 0 auto;
+
+    .lista--preguntas {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #874356;
+    }
+    
+    .lista--respuestas {
+      margin-bottom: 20px;
+      text-align: justify;
+
+      ul {
+        list-style: none;
+
+        li {
+          margin: 10px;
+        }
+      } 
+    }
+  }
+}
+
+
+

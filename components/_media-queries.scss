@@ -113,6 +113,23 @@
     }
   }
 
+  /*pagina contacto tablet*/
+  .contenedor__formulario form div {
+    padding: 1em;
+  }
+
+  /*pagina carrito tablet*/
+  .carrito {
+    width: 90%;
+
+    .carrito__cesta {
+      width: 100%;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  
+
 }
 
 @media screen and (max-width: 560px) {
@@ -197,4 +214,49 @@
     }
   }
 
+  /*pagina contacto mobile*/
+  .contenedor {
+    width: 90%;
+
+    &__formulario {
+      width: 100%;
+
+      form {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        .formulario--area {
+          grid-column: 1 / 2;
+        }
+      }
+    }
+  }
+
+  /*pagina faqs mobile*/
+  .faqs {
+    width: 90%;
+  }
+
+  .faqs__lista {
+    width: 90%;
+  }
+
+  /*pagina cesta mobile*/
+  .cesta__contenido {
+    flex-direction: column;
+
+    .cesta__imagen {
+      margin-bottom: 20px;
+    }
+  
+     dl {
+      margin: 10px;
+    }
+  }
+
+  .total {
+    margin-bottom: 20px;
+  }
+
+  
 }
