@@ -1,5 +1,5 @@
 .faqs {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 
   &__titulo {
@@ -8,14 +8,16 @@
   }
   
   &__lista {
-    width: 80%;
-    margin: 0 auto;
 
     .lista--preguntas {
+      display: inline-block;
       font-size: 20px;
       font-weight: bold;
       margin-bottom: 10px;
-      color: #874356;
+      color: black;
+      padding: 3px;
+      border-radius: 10px;
+      @include fondo-degradado;
     }
     
     .lista--respuestas {

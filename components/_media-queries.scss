@@ -81,14 +81,6 @@
   .section3 {
     grid-template-columns: 1fr;
     gap: 20px;
-
-    p {
-      width: 100%;
-    }
-
-    iframe {
-      width: 100%;
-    }
   }
 
   .section4 {
@@ -234,10 +226,6 @@
 
   /*pagina faqs mobile*/
   .faqs {
-    width: 90%;
-  }
-
-  .faqs__lista {
     width: 90%;
   }
 
