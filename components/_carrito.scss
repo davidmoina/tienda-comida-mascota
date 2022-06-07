@@ -24,7 +24,7 @@
         align-items: center;
         padding: 2em 1em;
         border-radius: 10px;
-        background-color: #ffead3;
+        background-color: $color-secundario;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 
         .cesta__imagen {
@@ -57,7 +57,7 @@
       grid-template-rows: 3fr 2fr;
       overflow: hidden;
       border-radius: 10px;
-        background-color: #ffead3;
+        background-color: $color-secundario;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 
       &__cesta {
@@ -82,7 +82,7 @@
         button {
           min-width: 130px;
           height: 40px;
-          color: #fff;
+          color: $color-claro;
           padding: 5px 10px;
           font-family: inherit;
           font-weight: bold;
@@ -110,7 +110,7 @@
       &--abajo {
         text-align: center;
         margin-top: 20px;
-        border-top: 1px solid black;
+        border-top: 1px solid $color-oscuro;
       }
     }
   }
